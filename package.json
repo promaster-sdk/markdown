@@ -37,6 +37,9 @@
     "build": "tsc && yarn build-esm",
     "build-esm": "rm -rf lib-esm && tsc -p . --module es2015 --moduleResolution node --outDir ./lib-esm",
     "test": "rm -rf test/lib && mocha --colors",
-    "lint": "eslint './src/**/*.ts{,x}' --ext .js,.ts,.tsx -f visualstudio"
+    "lint": "eslint './src/**/*.ts{,x}' --ext .js,.ts,.tsx -f visualstudio",
+    "verify": "yarn test'",
+    "preversion": "yarn verify",
+    "postversion": "git push --tags && yarn publish --new-version $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
   }
 }
