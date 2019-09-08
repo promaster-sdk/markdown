@@ -18,7 +18,9 @@ The Promaster flavor of markdown is the standard except extensions for:
 
 ## Installation
 
-`npm install --save @promaster-sdk/markdown`
+```
+npm install --save @promaster-sdk/markdown
+```
 
 The library is compiled to ES5 and no polyfills are required.
 
