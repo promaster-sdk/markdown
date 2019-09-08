@@ -11,6 +11,11 @@ Promaster Flavored Markdown
 
 This package is needed in order to convert promaster markdown texts to HTML.
 
+The Promaster flavor of markdown is the standard except extensions for:
+
+- Superscript
+- Subscript
+
 ## Installation
 
 `npm install --save @promaster-sdk/markdown`
