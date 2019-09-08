@@ -21,7 +21,9 @@
     "eslint-config-divid": "^0.2.0",
     "eslint-plugin-functional": "^1.0.0-rc.2",
     "eslint-plugin-import": "^2.18.2",
+    "lint-staged": "^9.2.5",
     "mocha": "^5.2.0",
+    "prettier": "^1.18.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.0"
   },
@@ -36,7 +38,20 @@
     "test": "rm -rf test/lib && mocha --colors",
     "lint": "eslint './src/**/*.ts{,x}' --ext .js,.ts,.tsx -f visualstudio",
     "verify": "yarn test'",
+    "precommit": "lint-staged",
     "preversion": "yarn verify",
     "postversion": "git push --tags && yarn publish --new-version $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "tslint",
+    "*.{ts,tsx,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "es5",
+    "arrowParens": "always"
   }
 }
