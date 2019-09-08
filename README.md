@@ -26,8 +26,11 @@ The library is compiled to ES5 and no polyfills are required.
 
 ## Usage
 
-```js
-TODO!
+```ts
+import { makeHtml } from "@promaster-sdk/markdown";
+
+const markdown = "...";
+const html = makeHtml(markdown);
 ```
 
 ## How to publish
