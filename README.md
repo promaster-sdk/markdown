@@ -1,4 +1,4 @@
-# @promaster/promaster-markdown
+# @promaster-sdk/markdown
 
 [![npm version][version-image]][version-url]
 [![travis build][travis-image]][travis-url]
