@@ -7,6 +7,15 @@
   "module": "lib-esm/index.js",
   "types": "lib-cjs/index",
   "license": "MIT",
+  "files": [
+    "/lib-cjs",
+    "/lib-esm",
+    "/src",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Divid Promaster AB",
   "publishConfig": {
     "access": "public"
