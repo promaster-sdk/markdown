@@ -1,6 +1,6 @@
 {
   "name": "@promaster-sdk/markdown",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Promaster Flavored Markdown",
   "repository": "https://github.com/promaster-sdk/markdown",
   "main": "lib-cjs/index.js",
